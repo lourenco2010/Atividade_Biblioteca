@@ -18,7 +18,7 @@ include("verificar_sessao.php");
 
 <body>
     <div class="container">
-        <h1>Olá, <?php echo $_SESSION['nome']; ?></h1>
+   <h1>Olá, <?php echo htmlspecialchars($_SESSION['nome'] ?? 'Usuário'); ?></h1>
         <p class="subtitulo">Bem-Vindo ao painel da biblioteca. Escolha uma opção:</p>
         <div class="painel-cards">
             <a href="cadastrar_livro.php" class="card-link">Cadastrar Livro</a>

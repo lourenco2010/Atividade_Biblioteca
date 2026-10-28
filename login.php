@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pr-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Biblioteca</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Biblioteca</h1>
@@ -13,7 +15,7 @@
 
         <?php
         if (isset($_GET['erro']) && $_GET['erro'] === 'login') {
-            echo'<div class="mensagem-erro">Login Inválido.
+            echo '<div class="mensagem-erro">Login Inválido.
             Verifique email e senha.</div>';
         }
         ?>
@@ -39,4 +41,5 @@
 
     </div>
 </body>
+
 </html>
